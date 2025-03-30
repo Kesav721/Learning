@@ -1,5 +1,5 @@
 def Calculator():
-    print("🧮 Simple Calculator")
+    print("Simple Calculator")
 
     num1=int(input("Enter the first number"))
     num2=int(input("Enter the Second number"))
