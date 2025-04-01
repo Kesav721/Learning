@@ -43,8 +43,8 @@ def display_score():
     print("\nThe Scoreboard:")
     print(f"User: {user_score}, Computer: {computer_score}, Ties: {ties}\n")
 
-# Play multiple rounds
+
 for i in range(5):
-    result = play()  # Play one round and store the result
-    update_score(result)  # Update score
-    display_score()  # Display the updated scoreboard
+    result = play()  
+    update_score(result)  
+    display_score()  
