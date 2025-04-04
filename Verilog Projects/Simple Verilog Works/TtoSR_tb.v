@@ -1,0 +1,30 @@
+module T_to_SR_tb();
+reg T,clk=0,reset;
+wire Q,Qbar;
+T_to_SR DUT(.T(T),.clk(clk),.reset(reset),.Q(Q),.Qbar(Qbar));
+always #5 clk=~clk;
+initial 
+begin 
+$dumpfile("T_to_SR.vcd");
+$dumpvars(0,T_to_SR_tb);
+$monitor($time,"T=%b,clk=%b,reset=%b,Q=%b,Qbar=%b",T,clk,reset,Q,Qbar);
+end
+initial 
+begin
+reset=1;
+#5 reset=0;
+end
+initial begin 
+T=0;
+#10 T=1;
+#10 T=1;
+#10 T=0;
+#10 T=1;
+#10 T=0;
+#10 T=0;
+
+
+#200$finish;
+end
+
+endmodule
