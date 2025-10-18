@@ -1,3 +1,5 @@
+#Q write a program to calculate the discount of an amount input by the user
+
 amount = float(input("Enter the amount: "))
 
 if amount > 10000:

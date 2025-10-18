@@ -1,3 +1,5 @@
+#Q  write a program to find the smallest of two numbers input by the user
+
 num1=int(input("Enter the first number:"))
 num2=int(input("Enter the second number:"))
 
