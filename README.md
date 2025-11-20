@@ -1,0 +1,12 @@
+This project analyses an employee dataset from ABC company. The dataset consists of 458 rows and 9 columns. The objective of the project is to clean, analyze ,visualize and interpret the dataset to help the company understand the trends in the dataset. The entire work is implemented in google collab using python and libraries such as Pandas,Numpy, Matplotlib and Seaborn.
+
+The dataset is imported using pandas and the properties of the dataset are extracted using the respective methods. The dataset contains columns such as ‘Name’,’Team’,’Number’,’Position’,’Age’,’Height’,’Weight’,’College’,’Salary’ . In these columns the ‘Height’ column contained incorrect values . So the entire column was replaced with random values between 150 cm and 180 cm.
+
+The number of employees in each team is calculated using value_count() method and the number of employees corresponding to each team is printed. The percentage of employees in each team is calculated using the formula for percentage. The data of employee count by team is plotted using matplotlib library for proper visualization. From the visualization, It is noted that,New Orleans Pelicans team has the maximum number of employees with 19 employees. Orlando Magic and Minnesota Timberwolves , these two teams have the minimum number of employees with 14 employees.
+
+The next step of the work is to segregate employees based on their job position. The number of employees corresponding to each position is calculated. From the data, it is evident that the position 'SG' has 102 employees which is the maximum. The position 'C' has 79 employees which is the minimum.  The employee count by position is plotted for visualization.
+
+An additional column is added to categorize each employee based on their age group. The number of employees corresponding to each age group is calculated and plotted for visualization. The barplot shows that there  are 182 people in the 25-29 age group. Maximum number of employees are in this age group. There are no employees with age more than 45.
+
+The sum of salary of all the employees in each team as well as each position are calculated.   The team and position with the maximum salary is also noted. The data is plotted to visualize the trend.The team Cleveland Cavaliers has the highest salary, which is 106988689 whereas,Position C is the position with Highest Salary Expenditure of 466377332.0.
+The correlation matrix heatmap is plotted to visualize the correlation of the columns. It is noted that age and salary have a correlation of 0.21400941226570971.
