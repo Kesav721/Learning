@@ -1,3 +1,6 @@
+**OverView of the Project**
+
+
 This project analyses an employee dataset from ABC company. The dataset consists of 458 rows and 9 columns. The objective of the project is to clean, analyze ,visualize and interpret the dataset to help the company understand the trends in the dataset. The entire work is implemented in google collab using python and libraries such as Pandas,Numpy, Matplotlib and Seaborn.
 
 The dataset is imported using pandas and the properties of the dataset are extracted using the respective methods. The dataset contains columns such as ‘Name’,’Team’,’Number’,’Position’,’Age’,’Height’,’Weight’,’College’,’Salary’ . In these columns the ‘Height’ column contained incorrect values . So the entire column was replaced with random values between 150 cm and 180 cm.
